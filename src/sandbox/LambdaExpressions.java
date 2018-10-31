@@ -2,6 +2,11 @@ package sandbox;
 
 import sandbox.Calculator.IntegerMath;
 
+/**
+* Class to demonstrate the different ways of writing lambda expressions.
+*
+* @author Professor VanSelow 
+*/
 public class LambdaExpressions {
 
   public static void demoLambda() {
