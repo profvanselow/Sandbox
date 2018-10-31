@@ -52,3 +52,9 @@
   System.out.println(l1.getClass() == l2.getClass());
 ```
 - You might be tempted to say false, but you'd be wrong. It prints true, because all instances of a generic class have the same run-time class, regardless of their actual type parameters.
+* An implication of the fact that a generic class is shared among all its instances, is that it usually makes no sense to ask an instance if it is an instance of a particular invocation of a generic type:
+```java
+  Collection cs = new ArrayList<String>();
+  // Illegal.
+  if (cs instanceof Collection<String>) { ... }
+```
