@@ -9,3 +9,9 @@
 * Abstract classes are similar to interfaces.
   - Cannot be instantiated
   - May contain a mix of methods declared with or without an implementation.
+## Final Keyword
+* Final references must always reference the same object.
+* The object to which the variable is referencing cannot be changed.
+* The contents of that object may be modified.
+* Makes it a constant.
+* ALL CAPS.
