@@ -44,3 +44,11 @@
 * Anonymous inner class are mainly created in two ways:
   - Class (may be abstract or concrete)
   - Interface
+## Generic Classes
+* What does the following code fragment print?
+```java
+	List <String> l1 = new ArrayList<String>();
+  List<Integer> l2 = new ArrayList<Integer>();
+  System.out.println(l1.getClass() == l2.getClass());
+```
+- You might be tempted to say false, but you'd be wrong. It prints true, because all instances of a generic class have the same run-time class, regardless of their actual type parameters.
