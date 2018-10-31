@@ -47,7 +47,7 @@
 ## Generic Classes
 * What does the following code fragment print?
 ```java
-	List <String> l1 = new ArrayList<String>();
+  List <String> l1 = new ArrayList<String>();
   List<Integer> l2 = new ArrayList<Integer>();
   System.out.println(l1.getClass() == l2.getClass());
 ```
