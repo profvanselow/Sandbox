@@ -12,6 +12,8 @@ public class Exceptions {
 
     multipleCatchExample();
 
+    multiCatchExample();
+
     try {
       propagateExample();
     } catch (Exception ex) {
@@ -50,6 +52,16 @@ public class Exceptions {
       System.out.println("Problem opening file");
     } catch (Exception ex) {
       System.out.println("Catch all other exceptions");
+    }
+  }
+
+  private static void multiCatchExample() {
+    try {
+    System.out.println(5 / 0);
+    InputStream input = null;
+    input = new FileInputStream("file.txt");  // code can throw an Exception.
+    } catch (ArithmeticException | IOException e) {
+      System.out.println("Can't divide by 0 or Problem opening file");
     }
   }
 
