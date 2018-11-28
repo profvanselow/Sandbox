@@ -31,6 +31,11 @@ public class Exceptions {
     } catch (IOException e) {
       System.out.println("Catch printFileJava7");
     }
+
+    //File infile = new File("myFile.txt");
+    //FileInputStream in = null;
+    //in = new FileInputStream(infile);
+
   }
 
   private static void basicExample() {
