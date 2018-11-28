@@ -2,6 +2,9 @@ package sandbox;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+// Navigate -> Test -> JUnit 5
+// Add JUnit to classpath
+
 // http://www.vogella.com/tutorials/JUnit/article.html
 // https://www.guru99.com/junit-assert.html#5
 // https://www.tutorialspoint.com/intellij_idea/intellij_idea_unit_testing.htm
