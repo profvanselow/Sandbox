@@ -4,11 +4,10 @@
 
 package sandbox;
 
-import sandbox.Calculator.IntegerMath;
-
 public class Main {
 
   public static void main(String[] args) {
+
     //Scanner scan = new Scanner(System.in);
 
     //demoToStringOverride();
@@ -18,8 +17,8 @@ public class Main {
     //demoNestedClass();
     //demoInterfaceImplementation();
     //demoEnum();
-    LambdaExpressions.demoLambda();
-    //Generics.genericDemo();
+    //LambdaExpressions.demoLambda();
+    Generics.genericDemo();
     //HashSetDemo.demoHashSet();
 
   }

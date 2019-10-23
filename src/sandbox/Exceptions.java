@@ -33,7 +33,7 @@ public class Exceptions {
     }
 
     //File infile = new File("myFile.txt");
-    //FileInputStream in = null;
+    FileInputStream in = null;
     //in = new FileInputStream(infile);
 
   }
@@ -65,7 +65,7 @@ public class Exceptions {
     System.out.println(5 / 0);
     InputStream input = null;
     input = new FileInputStream("file.txt");  // code can throw an Exception.
-    } catch (ArithmeticException | IOException e) {
+    } catch (ArithmeticException | IOException ex) {
       System.out.println("Can't divide by 0 or Problem opening file");
     }
   }

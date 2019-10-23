@@ -22,8 +22,8 @@ public class Automobile {
 
   public final String toString() {
 
-    //return super.toString() + "This automobile is a " + make;
-    return "This automobile is a " + make;
+  return super.toString() + "This automobile is a " + make;
+   // return "This automobile is a " + make;
 
   }
 
