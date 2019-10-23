@@ -18,7 +18,8 @@ public class Main {
     //demoInterfaceImplementation();
     //demoEnum();
     //LambdaExpressions.demoLambda();
-    Generics.genericDemo();
+    demoAnonymousClass();
+    //Generics.genericDemo();
     //HashSetDemo.demoHashSet();
 
   }
@@ -46,7 +47,7 @@ public class Main {
   }
 
   public static void demoLocalClass() {
-    // Local classe are classes that are defined in a block,
+    // Local classes are classes that are defined in a block,
     // which is a group of zero or more statements between balanced braces.
     // You typically find local classes defined in the body of a method.
 
@@ -137,6 +138,15 @@ public class Main {
 
     //InnerClass i = new InnerClass(); // illegal
 
+  }
+
+  public static void demoAnonymousClass() {
+    Machine machine1 = new Machine() {
+      @Override public void start() {
+        System.out.println("Camera snapping ....");
+      }
+    };
+    machine1.start();
   }
 
 

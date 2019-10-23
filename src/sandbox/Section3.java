@@ -5,7 +5,7 @@ import java.util.ArrayList;
 // https://www.caveofprogramming.com/java-video/java-for-complete-beginners-video-part-31-generics-wildcards.html
 
 /**
- *
+ * Anonymous class demonstration
  */
 class Machine {
 
