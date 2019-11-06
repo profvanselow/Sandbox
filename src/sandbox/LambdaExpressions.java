@@ -59,10 +59,10 @@ public class LambdaExpressions {
     };
     mi3.printIt("Cooler way");
 
-    // When it's just one line, the braces
+    // When it's just one line, the braces and semicolon
     // can be omitted. Super Wild!
     // This format (without braces) is called an "expression lambda".
-    MyInterface mi4 = (text) -> System.out.println(text);
+    MyInterface mi4 = (text) -> System.out.println(text); System.out.println("test");
     mi4.printIt("Coolest way");
 
     // When a lambda expression does nothing but call an existing method the
