@@ -25,7 +25,7 @@ public class LambdaExpressions {
     // Another way, with an "anonymous interface implementation".
     // No object of a class that implements the interface is created.
     MyInterface mi1 = new MyInterface() {
-      public void printIt(String text){
+      public void printIt(String text) {
         System.out.println(text);
       }
     };
@@ -59,14 +59,16 @@ public class LambdaExpressions {
     };
     mi3.printIt("Cooler way");
 
-    // When it's just one line, the braces and semicolon
+    // When it's just one line, the braces
     // can be omitted. Super Wild!
     // This format (without braces) is called an "expression lambda".
-    MyInterface mi4 = (text) ->
-      System.out.println(text)
-   ;
+    MyInterface mi4 = (text) -> System.out.println(text);
     mi4.printIt("Coolest way");
 
+    // When a lambda expression does nothing but call an existing method the
+    // expression lambda can be replaced with a method reference. Mind Blown!
+    MyInterface mi5 = System.out::println;
+    mi5.printIt("Cooler than cool");
     demoCalculatorLambda();
   }
 
@@ -97,6 +99,7 @@ public class LambdaExpressions {
 interface MyInterface {
 
   public void printIt(String text);
+
 }
 
 // Without using lambdas, the interface would need to be
@@ -107,4 +110,5 @@ class MyInterfaceImplementation implements MyInterface {
   public void printIt(String text) {
     System.out.println(text);
   }
+
 }

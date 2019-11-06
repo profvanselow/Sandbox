@@ -7,13 +7,22 @@ class NestedClass {
   public int getOuterClassField() {
     return outerClassField;
   }
-  class InnerClass {
+
+  class InnerClass {  // non-static nested class
 
     void changeOuterClassField() {
 
       // can't do this if static
       outerClassField = 5;
     }
+  }
+   static class StaticNestedClass {
+
+      void changeOuterClassField() {
+
+        // can't do this in static
+        //outerClassField = 5;
+      }
 
   }
 }
